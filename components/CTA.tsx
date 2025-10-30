@@ -18,7 +18,7 @@ const CTA: React.FC = () => {
     <section id="contacto" className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <AnimateOnScroll>
-          <div className="bg-gradient-to-br from-blue-900 to-blue-600 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-jbm-yellow to-jbm-red-orange rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
             <div className="absolute inset-0 z-0 opacity-10">
                 <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-[radial-gradient(circle,rgba(255,255,255,1)_0%,transparent_80%)]"></div>
                 <div className="absolute -bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-[radial-gradient(circle,rgba(255,255,255,1)_0%,transparent_80%)]"></div>
@@ -28,7 +28,7 @@ const CTA: React.FC = () => {
               <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto">Solicita una cotización sin compromiso y descubre cómo podemos ayudarte</p>
               
               <div className="my-10">
-                <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-800 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-gray-200 hover:-translate-y-1 transform shadow-lg">
+                <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-jbm-orange font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-gray-200 hover:-translate-y-1 transform shadow-lg">
                   💬 Chatear por WhatsApp
                 </a>
               </div>

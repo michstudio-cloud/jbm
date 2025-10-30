@@ -16,19 +16,19 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-4">Servicios</h4>
             <ul className="space-y-3">
-              <li><a href="#servicios" className="text-white/50 hover:text-blue-500 transition-colors">Polarizados</a></li>
-              <li><a href="#productos" className="text-white/50 hover:text-blue-500 transition-colors">Películas Premium</a></li>
-              <li><a href="#empresa" className="text-white/50 hover:text-blue-500 transition-colors">Edificios</a></li>
-              <li><a href="#galeria" className="text-white/50 hover:text-blue-500 transition-colors">Portfolio</a></li>
+              <li><a href="#servicios" className="text-white/50 hover:text-jbm-orange transition-colors">Polarizados</a></li>
+              <li><a href="#productos" className="text-white/50 hover:text-jbm-orange transition-colors">Películas Premium</a></li>
+              <li><a href="#empresa" className="text-white/50 hover:text-jbm-orange transition-colors">Edificios</a></li>
+              <li><a href="#galeria" className="text-white/50 hover:text-jbm-orange transition-colors">Portfolio</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Empresa</h4>
             <ul className="space-y-3">
-              <li><a href="#empresa" className="text-white/50 hover:text-blue-500 transition-colors">Nosotros</a></li>
-              <li><a href="#galeria" className="text-white/50 hover:text-blue-500 transition-colors">Trabajos</a></li>
-              <li><a href="#contacto" className="text-white/50 hover:text-blue-500 transition-colors">Contacto</a></li>
-              <li><a href="#contacto" className="text-white/50 hover:text-blue-500 transition-colors">Cotizaciones</a></li>
+              <li><a href="#empresa" className="text-white/50 hover:text-jbm-orange transition-colors">Nosotros</a></li>
+              <li><a href="#galeria" className="text-white/50 hover:text-jbm-orange transition-colors">Trabajos</a></li>
+              <li><a href="#contacto" className="text-white/50 hover:text-jbm-orange transition-colors">Contacto</a></li>
+              <li><a href="#contacto" className="text-white/50 hover:text-jbm-orange transition-colors">Cotizaciones</a></li>
             </ul>
           </div>
           <div>

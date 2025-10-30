@@ -7,7 +7,7 @@ const Comparison: React.FC = () => {
     <section className="py-24 bg-black">
       <div className="container mx-auto px-6">
         <AnimateOnScroll className="text-center mb-16">
-          <div className="text-sm font-semibold text-blue-500 uppercase tracking-widest mb-4">Resultados Reales</div>
+          <div className="text-sm font-semibold text-jbm-orange uppercase tracking-widest mb-4">Resultados Reales</div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Antes y Después</h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto">Transforma tu vehículo con tecnología premium</p>
         </AnimateOnScroll>

@@ -26,16 +26,16 @@ const Header: React.FC = () => {
         </a>
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="text-white/70 hover:text-white transition-colors duration-300 font-medium">
+            <a key={link.href} href={link.href} className="text-white/70 hover:text-jbm-orange transition-colors duration-300 font-medium">
               {link.label}
             </a>
           ))}
-          <a href="#contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+          <a href="#contacto" className="bg-jbm-orange hover:bg-jbm-red-orange text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105">
             Cotizar
           </a>
         </div>
         <div className="md:hidden">
-            <a href="#contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300">
+            <a href="#contacto" className="bg-jbm-orange hover:bg-jbm-red-orange text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300">
                 Cotizar
             </a>
         </div>

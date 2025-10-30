@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 container mx-auto px-6">
           <div className="max-w-4xl">
               <AnimateOnScroll>
-                <div className="inline-flex items-center gap-2 py-2 px-4 mb-8 bg-blue-600/10 border border-blue-600/30 rounded-full text-sm text-blue-400">
+                <div className="inline-flex items-center gap-2 py-2 px-4 mb-8 bg-jbm-orange/10 border border-jbm-orange/30 rounded-full text-sm text-jbm-yellow">
                     <span>⚡</span> Tecnología Nanocerámica Premium
                 </div>
               </AnimateOnScroll>
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.3}>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-16">
-                      <a href="#contacto" className="bg-blue-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-600/30">
+                      <a href="#contacto" className="bg-jbm-orange text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 hover:shadow-2xl hover:shadow-jbm-orange/30">
                           Solicitar Cotización
                       </a>
                       <a href="#servicios" className="bg-white/5 border border-white/10 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:bg-white/10">
@@ -41,15 +41,15 @@ const Hero: React.FC = () => {
               <AnimateOnScroll delay={0.4}>
                   <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 justify-center lg:justify-start">
                       <div className="text-center lg:text-left">
-                          <div className="text-5xl font-bold text-blue-500 mb-1">99%</div>
+                          <div className="text-5xl font-bold text-jbm-orange mb-1">99%</div>
                           <div className="text-sm text-white/50">Protección UV</div>
                       </div>
                       <div className="text-center lg:text-left">
-                          <div className="text-5xl font-bold text-blue-500 mb-1">93%</div>
+                          <div className="text-5xl font-bold text-jbm-orange mb-1">93%</div>
                           <div className="text-sm text-white/50">Reducción Resplandor</div>
                       </div>
                       <div className="text-center lg:text-left">
-                          <div className="text-5xl font-bold text-blue-500 mb-1">290+</div>
+                          <div className="text-5xl font-bold text-jbm-orange mb-1">290+</div>
                           <div className="text-sm text-white/50">Clientes Satisfechos</div>
                       </div>
                   </div>

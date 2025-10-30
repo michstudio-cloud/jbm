@@ -87,14 +87,14 @@ const App: React.FC = () => {
           ctaText="Cotizar Ahora"
         >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-10">
-                <div className="bg-orange-500/10 border border-orange-500/30 p-6 rounded-2xl">
+                <div className="bg-jbm-orange/10 border border-jbm-orange/30 p-6 rounded-2xl">
                     <div className="text-4xl mb-2">☀️</div>
-                    <h4 className="mb-2 text-orange-500 font-semibold">DÍA / SOL</h4>
+                    <h4 className="mb-2 text-jbm-orange font-semibold">DÍA / SOL</h4>
                     <p className="text-white/60 text-sm">Deep/Light Black - Se oscurece automáticamente para máxima protección</p>
                 </div>
-                <div className="bg-blue-600/10 border border-blue-600/30 p-6 rounded-2xl">
+                <div className="bg-indigo-900/10 border border-indigo-900/30 p-6 rounded-2xl">
                     <div className="text-4xl mb-2">🌙</div>
-                    <h4 className="mb-2 text-blue-500 font-semibold">NOCHE</h4>
+                    <h4 className="mb-2 text-indigo-500 font-semibold">NOCHE</h4>
                     <p className="text-white/60 text-sm">Transparente - Se aclara para óptima visibilidad nocturna</p>
                 </div>
             </div>
@@ -109,7 +109,7 @@ const App: React.FC = () => {
           image="https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?w=800&auto=format&fit=crop&q=60"
           imageAlt="Edificio comercial"
           badgeComponent={
-            <div className="absolute bottom-8 left-8 right-8 bg-blue-600/95 backdrop-blur-sm p-6 rounded-2xl text-center">
+            <div className="absolute bottom-8 left-8 right-8 bg-jbm-orange/95 backdrop-blur-sm p-6 rounded-2xl text-center">
               <strong className="text-lg block">Recupera tu inversión en 2-3 años</strong>
               <p className="mt-2 text-sm text-white/80">Ahorro energético comprobado</p>
             </div>
@@ -121,7 +121,7 @@ const App: React.FC = () => {
           ctaText="Solicitar Cotización Empresarial"
         />
         <Gallery items={galleryData} />
-        <CTA />
+      <CTA />
       </main>
       <Footer />
     </div>
