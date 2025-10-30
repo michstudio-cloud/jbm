@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -7,8 +6,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2 lg:col-span-1">
-            <a href="#" className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-4 inline-block">
-              JBM Tecnología
+            <a href="#" className="text-2xl font-bold tracking-tight mb-4 inline-block">
+              <img src="https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/jbm%20logo.svg" alt="JBM Tecnología Solar Logo" className="h-10" />
             </a>
             <p className="text-white/50 text-sm leading-relaxed">
               Líderes en protección solar premium con tecnología nanocerámica de vanguardia. Transformando vehículos y edificios desde Reynosa, Tamaulipas.
