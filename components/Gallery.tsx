@@ -14,7 +14,7 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
         <AnimateOnScroll className="text-center mb-16">
           <div className="text-sm font-semibold text-jbm-orange uppercase tracking-widest mb-4">Portfolio</div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Nuestro Trabajo</h2>
-          <p className="text-lg text-white/50 max-w-2xl mx-auto">Resultados reales, protección garantizada</p>
+          <p className="text-lg text-white/50 max-w-2xl mx-auto">Descubre nuestros proyectos de polarizados en Reynosa</p>
         </AnimateOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((item, index) => (

@@ -20,12 +20,12 @@ const Hero: React.FC = () => {
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.1}>
                   <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
-                      Protección Solar de<br/>Alta Tecnología
+                      Protección Solar de<br/>Alta Tecnología en Reynosa
                   </h1>
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.2}>
                   <p className="text-lg lg:text-xl text-white/60 mb-10 max-w-2xl mx-auto lg:mx-0">
-                      Polarizados nanocerámicos y películas de seguridad para vehículos y edificios.
+                      Polarizados nanocerámicos y películas de seguridad premium para vehículos y edificios en Reynosa, Tamaulipas.
                   </p>
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.3}>

@@ -24,3 +24,9 @@ export interface GalleryItem {
   description: string;
   isLarge?: boolean;
 }
+
+export interface Testimonial {
+  name: string;
+  rating: number;
+  reviewText: string;
+}

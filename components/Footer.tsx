@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -10,7 +12,7 @@ const Footer: React.FC = () => {
               <img src="https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/jbm%20logo.svg" alt="JBM Tecnología Solar Logo" className="h-10" />
             </a>
             <p className="text-white/50 text-sm leading-relaxed">
-              Líderes en protección solar premium con tecnología nanocerámica de vanguardia. Transformando vehículos y edificios desde Reynosa, Tamaulipas.
+              Líderes en polarizados nanocerámicos y protección solar premium con tecnología de vanguardia en Reynosa, Tamaulipas. Transformando vehículos y edificios.
             </p>
           </div>
           <div>
@@ -35,8 +37,8 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold mb-4">Contacto</h4>
             <ul className="space-y-3 text-white/50">
               <li>Reynosa, Tamaulipas</li>
-              <li>899 255 7561</li>
-              <li>JBM Tecnología Solar</li>
+              <li>+52 899 255 7561</li>
+              <li><a href="https://www.facebook.com/solarcontrol20" target="_blank" rel="noopener noreferrer" className="hover:text-jbm-orange transition-colors">JBM Tecnología Solar</a></li>
             </ul>
           </div>
         </div>

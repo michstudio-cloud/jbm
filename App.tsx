@@ -6,10 +6,11 @@ import Services from './components/Services';
 import FeatureSection from './components/FeatureSection';
 import Comparison from './components/Comparison';
 import Benefits from './components/Benefits';
+import Testimonials from './components/Testimonials'; // Import the new component
 import Gallery from './components/Gallery';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import { Service, Benefit, Feature, GalleryItem } from './types';
+import { Service, Benefit, Feature, GalleryItem, Testimonial } from './types';
 
 const App: React.FC = () => {
 
@@ -53,6 +54,14 @@ const App: React.FC = () => {
     { image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60", alt: "Edificio", title: "Proyectos Comerciales", description: "Soluciones arquitectónicas de alta tecnología", isLarge: true },
   ];
 
+  const testimonialsData: Testimonial[] = [
+    { name: "Carlos G.", rating: 5, reviewText: "Excelente servicio de polarizados en Reynosa. La película nanocerámica ha hecho una gran diferencia en el calor de mi auto y la protección UV es inigualable. ¡Muy recomendados!" },
+    { name: "Ana M.", rating: 5, reviewText: "Pedí polarizado para mi camioneta y el trabajo fue impecable. Ahora en Reynosa el calor ya no es un problema. La atención al cliente fue fantástica." },
+    { name: "Roberto P.", rating: 5, reviewText: "Contratamos a JBM para polarizar las ventanas de nuestra oficina en Reynosa y los resultados son geniales. Mucho menos resplandor y la oficina se mantiene más fresca." },
+    { name: "Sofía L.", rating: 5, reviewText: "Los mejores polarizados de seguridad que he probado. Me siento mucho más segura en mi vehículo, y el look es increíble. Servicio profesional en Reynosa." },
+    { name: "Miguel R.", rating: 5, reviewText: "Buscaba polarizados de calidad en Reynosa y encontré JBM. No solo redujeron el calor, sino que también mejoró la privacidad. ¡Contentísimo con el polarizado!" },
+  ];
+
   return (
     <div className="bg-black">
       <Header />
@@ -69,8 +78,7 @@ const App: React.FC = () => {
           badgeText="99% UV"
           heading="ACTION Premium"
           tagline="Película Nano-Carbono de Alta Tecnología"
-          description="La tecnología ACTION ofrece el más alto nivel de protección contra rayos UV y reducción de calor, utilizando partículas de nano-carbono que no interfieren con señales electrónicas."
-          features={actionFeatures}
+          description="La tecnología ACTION ofrece el más alto nivel de protección contra rayos UV y reducción de calor, siendo la mejor opción en polarizados en Reynosa. Utiliza partículas de nano-carbono que no interfieren con señales electrónicas."
           ctaText="Solicitar Información"
         />
         <FeatureSection
@@ -101,6 +109,7 @@ const App: React.FC = () => {
         </FeatureSection>
         <Comparison />
         <Benefits benefits={benefitsData} />
+        <Testimonials testimonials={testimonialsData} /> {/* New Testimonials Section */}
         <FeatureSection
           id="empresa"
           label="Soluciones Corporativas"
@@ -116,7 +125,7 @@ const App: React.FC = () => {
           }
           heading="Transforma tu Espacio"
           tagline="Soluciones Arquitectónicas Premium"
-          description="Nuestros polarizados nanocerámicos para edificios ofrecen la combinación perfecta entre funcionalidad, estética y ahorro energético para empresas modernas."
+          description="Nuestros polarizados nanocerámicos para edificios en Reynosa ofrecen la combinación perfecta entre funcionalidad, estética y ahorro energético para empresas modernas."
           features={businessFeatures}
           ctaText="Solicitar Cotización Empresarial"
         />

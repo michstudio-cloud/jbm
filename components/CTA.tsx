@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 
@@ -45,16 +46,16 @@ const CTA: React.FC = () => {
                   <PhoneIcon/>
                   <div>
                     <strong className="block text-sm">Teléfono</strong>
-                    <span className="text-xs text-white/70">899 255 7561</span>
+                    <span className="text-xs text-white/70">+52 899 255 7561</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm">
+                <a href="https://www.facebook.com/solarcontrol20" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm group">
                    <FacebookIcon/>
                   <div>
                     <strong className="block text-sm">Facebook</strong>
-                    <span className="text-xs text-white/70">JBM Tecnología Solar</span>
+                    <span className="text-xs text-white/70 group-hover:text-white transition-colors duration-300">JBM Tecnología Solar</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
