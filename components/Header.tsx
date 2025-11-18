@@ -16,6 +16,8 @@ const Header: React.FC = () => {
     { href: "#productos", label: "Productos" },
     { href: "#galeria", label: "Galería" },
     { href: "#empresa", label: "Empresa" },
+    { href: "#/polarizados-legales", label: "Polarizados Legales" }, // New link added here
+    { href: "#/polarizado-inteligente", label: "Polarizado Inteligente" }, // New link for Smart Tint page
   ];
 
   return (
