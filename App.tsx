@@ -3,7 +3,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './HomePage';
 import LegalTintPage from './LegalTintPage';
-import SmartTintPage from './SmartTintPage'; // Import the new SmartTintPage
+import SmartTintPage from './SmartTintPage';
+import WhyTintPage from './WhyTintPage'; // Import the new WhyTintPage
+import QuotePage from './QuotePage'; // Import the new QuotePage
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash);
@@ -23,8 +25,12 @@ const App: React.FC = () => {
     switch (currentPath) {
       case '#/polarizados-legales':
         return <LegalTintPage />;
-      case '#/polarizado-inteligente': // New case for Smart Tint page
+      case '#/polarizado-inteligente':
         return <SmartTintPage />;
+      case '#/por-que-polarizar': // New case for Why Tint page
+        return <WhyTintPage />;
+      case '#/cotizacion-polarizado': // New case for Quote page
+        return <QuotePage />;
       case '#':
       case '':
       default:

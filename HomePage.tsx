@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -13,11 +14,11 @@ const HomePage: React.FC = () => {
 
   const servicesData: Service[] = [
     { image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&auto=format&fit=crop&q=60", alt: "Protección cerámica", title: "Protección Cerámica", description: "Tecnología nanocerámica de última generación para máxima protección UV y térmica." },
-    { image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f1342?w=600&auto=format&fit=crop&q=60", alt: "Corrección de pintura", title: "Corrección de Pintura", description: "Restauración profesional que devuelve el brillo original a tu vehículo." },
+    // Removed "Corrección de Pintura" service
     { image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&auto=format&fit=crop&q=60", alt: "Cuidado interior", title: "Cuidado Interior", description: "Detallado completo del interior con productos premium especializados." },
     { image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&auto=format&fit=crop&q=60", alt: "Polarizado premium", title: "Polarizado Premium", description: "Films de alta calidad con garantía de fábrica y tecnología de bloqueo UV." },
-    { image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&auto=format&fit=crop&q=60", alt: "Cambio de color", title: "Cambio de Color", description: "Transforma tu vehículo con films de cambio de color removibles y protectores." },
-    { image: "https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?w=600&auto=format&fit=crop&q=60", alt: "Ventanas edificios", title: "Edificios Comerciales", description: "Soluciones arquitectónicas para oficinas y construcciones comerciales." },
+    // Removed "Cambio de Color" service
+    { image: "https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/photos/WhatsApp%20Image%202025-11-11%20at%2013.06.43%281%29.jpeg", alt: "Ventanas edificios", title: "Edificios Comerciales", description: "Soluciones arquitectónicas para oficinas y construcciones comerciales." },
   ];
 
   const actionFeatures: Feature[] = [

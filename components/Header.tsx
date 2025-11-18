@@ -16,8 +16,10 @@ const Header: React.FC = () => {
     { href: "#productos", label: "Productos" },
     { href: "#galeria", label: "Galería" },
     { href: "#empresa", label: "Empresa" },
-    { href: "#/polarizados-legales", label: "Polarizados Legales" }, // New link added here
-    { href: "#/polarizado-inteligente", label: "Polarizado Inteligente" }, // New link for Smart Tint page
+    { href: "#/polarizados-legales", label: "Polarizados Legales" },
+    { href: "#/polarizado-inteligente", label: "Polarizado Inteligente" },
+    { href: "#/por-que-polarizar", label: "Por Qué Polarizar" }, // New link for Why Tint page
+    { href: "#/cotizacion-polarizado", label: "Cotización" }, // New link for Quote page
   ];
 
   return (
