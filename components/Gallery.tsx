@@ -20,7 +20,7 @@ const Gallery: React.FC<GalleryProps> = ({ items }) => {
           {items.map((item, index) => (
             <AnimateOnScroll key={index} className={`${item.isLarge ? 'md:col-span-2' : ''}`} delay={index * 0.1}>
               <div className={`relative h-96 ${item.isLarge ? 'md:h-[500px]' : 'md:h-96'} rounded-2xl overflow-hidden group cursor-pointer border border-white/5`}>
-                <img src={item.image} alt={item.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src={item.image} alt={item.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                   <h3 className="text-2xl font-bold text-jbm-orange mb-2">{item.title}</h3>
                   <p className="text-white/80">{item.description}</p>

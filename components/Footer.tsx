@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2 lg:col-span-1">
             <a href="#" className="text-2xl font-bold tracking-tight mb-4 inline-block">
-              <img src="https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/jbm%20logo.svg" alt="JBM Tecnología Solar Logo" className="h-10" />
+              <img src="https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/jbm%20logo.svg" alt="JBM Tecnología Solar Logo" className="h-10" loading="lazy" />
             </a>
             <p className="text-white/50 text-sm leading-relaxed">
               Líderes en polarizados nanocerámicos y protección solar premium con tecnología de vanguardia en Reynosa, Tamaulipas. Transformando vehículos y edificios.

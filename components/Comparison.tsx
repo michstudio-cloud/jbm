@@ -13,7 +13,7 @@ const Comparison: React.FC = () => {
         </AnimateOnScroll>
         <AnimateOnScroll>
           <div className="relative rounded-2xl overflow-hidden h-[400px] md:h-[600px] border border-white/10">
-            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1400&auto=format&fit=crop&q=60" alt="Comparación" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1400&auto=format&fit=crop&q=60" alt="Comparación" className="w-full h-full object-cover" loading="lazy" />
             <div className="absolute inset-0 flex">
               <div className="w-1/2 p-6 md:p-12 flex flex-col justify-end bg-gradient-to-r from-red-500/30 to-transparent border-r-2 border-red-500/50">
                 <div>

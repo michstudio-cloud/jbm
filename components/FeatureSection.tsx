@@ -57,7 +57,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center ${direction === 'reverse' ? 'lg:grid-flow-col-dense' : ''}`}>
           <AnimateOnScroll className={`${direction === 'reverse' ? 'lg:col-start-2' : ''}`}>
             <div className="relative">
-              <img src={image} alt={imageAlt} className="rounded-2xl shadow-2xl shadow-black/50 w-full h-auto object-cover aspect-[4/3]" />
+              <img src={image} alt={imageAlt} className="rounded-2xl shadow-2xl shadow-black/50 w-full h-auto object-cover aspect-[4/3]" loading="lazy" />
               {badgeText && (
                 <div className="absolute top-6 right-6 bg-jbm-orange/90 backdrop-blur-sm py-3 px-6 rounded-xl font-bold text-lg">
                   {badgeText}
