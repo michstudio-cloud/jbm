@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -30,7 +31,7 @@ const Footer: React.FC = () => {
               <li><a href="#empresa" className="text-white/50 hover:text-jbm-orange transition-colors">Nosotros</a></li>
               <li><a href="#galeria" className="text-white/50 hover:text-jbm-orange transition-colors">Trabajos</a></li>
               <li><a href="#contacto" className="text-white/50 hover:text-jbm-orange transition-colors">Contacto</a></li>
-              <li><a href="#contacto" className="text-white/50 hover:text-jbm-orange transition-colors">Cotizaciones</a></li>
+              <li><a href="#cotizacion-polarizado-nanoceramico" className="text-white/50 hover:text-jbm-orange transition-colors">Cotizaciones</a></li>
             </ul>
           </div>
           <div>

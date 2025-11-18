@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 
@@ -26,7 +27,7 @@ const CTA: React.FC = () => {
             </div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-4">¿Listo para Proteger tu Inversión?</h2>
-              <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto">Solicita una cotización sin compromiso y descubre cómo podemos ayudarte</p>
+              <p className="text-lg md::text-xl text-white/80 mb-8 max-w-3xl mx-auto">Solicita una cotización sin compromiso y descubre cómo podemos ayudarte</p>
               
               <div className="my-10">
                 <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-jbm-orange font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-gray-200 hover:-translate-y-1 transform shadow-lg">

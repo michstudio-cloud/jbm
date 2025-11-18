@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 
@@ -30,7 +31,7 @@ const Comparison: React.FC = () => {
               <div className="w-1/2 p-6 md:p-12 flex flex-col justify-end items-start text-left bg-gradient-to-l from-green-500/30 to-transparent">
                  <div>
                     <h3 className="text-2xl md:text-4xl font-bold text-green-500 uppercase tracking-wider mb-4">DESPUÉS</h3>
-                    <ul className="space-y-2 text-sm md:text-base">
+                    <ul className="space-y-2 text-sm md::text-base">
                         <li>✓ Temperatura ideal</li>
                         <li>✓ Protección UV 100%</li>
                         <li>✓ Privacidad total</li>
