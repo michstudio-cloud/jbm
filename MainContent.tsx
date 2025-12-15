@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -10,6 +9,13 @@ import Gallery from './components/Gallery';
 import CTA from './components/CTA';
 import AnimateOnScroll from './components/AnimateOnScroll';
 import { Service, Benefit, Feature, GalleryItem, Testimonial } from './types';
+
+// Reusable CheckIcon for lists
+const CheckIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-jbm-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+  </svg>
+);
 
 const MainContent: React.FC = () => {
 
@@ -96,301 +102,196 @@ const MainContent: React.FC = () => {
         ctaText="Solicitar Información"
         features={actionFeatures}
       />
+      
+      {/* --- Smart Tint Page Content integrated as FeatureSection --- */}
       <FeatureSection
+        id="polarizado-inteligente"
         direction="reverse"
         label="Tecnología Inteligente"
-        title="Película Fotocromática"
-        subtitle="Se adapta automáticamente a las condiciones de luz"
-        image="https://images.unsplash.com/photo-15196417267-b50a006371f4?w=800&auto=format&fit=crop&q=60"
-        imageAlt="Película fotocromática"
-        badgeText="Adaptable"
-        heading="Película Fotocromática"
-        tagline="Inteligencia que se adapta a ti"
-        description="Nuestra película fotocromática ajusta su tonalidad según la intensidad de la luz solar, ofreciendo máxima visibilidad y protección sin importar las condiciones externas. Ideal para quienes buscan lo último en tecnología de polarizado."
-        ctaText="Descubrir Más"
-      />
-      <FeatureSection
-        id="empresa"
-        label="Soluciones Corporativas"
-        title="JBM para tu Negocio"
-        subtitle="Optimiza el ambiente y protege tu inversión comercial"
-        image="https://images.unsplash.com/photo-1544733319-3c35b8cf41f0?w=800&auto=format&fit=crop&q=60"
-        imageAlt="JBM Tecnología Solar para negocios"
-        badgeText="Ahorro Energético"
-        heading="Soluciones para Edificios Comerciales"
-        tagline="Eficiencia y Protección para tu Empresa"
-        description="Ofrecemos películas arquitectónicas que transforman cualquier espacio comercial. Reduce el calor, mejora la privacidad y protege tus interiores con films de alto rendimiento diseñados para durar."
-        ctaText="Cotizar para mi Negocio"
-        features={businessFeatures}
-      />
-      <Comparison />
-      <Benefits benefits={benefitsData} />
-      <Testimonials testimonials={testimonialsData} />
-      <Gallery items={galleryData} />
+        title="Polarizado Transparente"
+        subtitle="La nueva generación en protección solar automotriz"
+        image="https://images.unsplash.com/photo-1549397621-3e4b7b2a6a1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&q=80&fit=crop&crop=focalpoint&fp-y=.8"
+        imageAlt="Polarizado Inteligente Transparente"
+        badgeText="Invisible y Potente"
+        heading="Visibilidad Perfecta, Protección Total"
+        tagline="Ideal para quienes buscan máxima protección sin perder visibilidad ni estilo."
+        description="Este polarizado inteligente combina tecnología avanzada y estética moderna para ofrecerte claridad total con beneficios reales. Prácticamente invisible, mantiene la claridad del vidrio original sin alterar el diseño de tu vehículo."
+        ctaText="Agenda tu Prueba Gratuita"
+      >
+        <ul className="space-y-3 mt-6 text-white/80">
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Transparente y elegante:</strong> mantiene la claridad del vidrio original.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Protección UV y contra el calor:</strong> bloquea rayos ultravioleta y reduce la temperatura interior.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Seguridad y visibilidad total:</strong> conducción segura de día y de noche, sin reflejos ni distorsión.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Durabilidad garantizada:</strong> alta resistencia contra el desgaste, rayas y burbujas.</li>
+        </ul>
+      </FeatureSection>
 
-      {/* --- Legal Tint Page Content --- */}
-      <section id="polarizados-legales" className="py-24 bg-black text-white">
+      {/* --- Why Tint Page Content integrated as FeatureSections --- */}
+      <FeatureSection
+        id="por-que-polarizar"
+        label="Beneficios Indispensables"
+        title="¿Por Qué Polarizar tu Vehículo?"
+        subtitle="Estilo, Confort y Protección Avanzada"
+        image="https://images.unsplash.com/photo-1629858694002-39c87895e6f6?w=800&auto=format&fit=crop&q=60"
+        imageAlt="Beneficios del Polarizado Automotriz"
+        heading="Protege tu Inversión y tu Bienestar"
+        tagline="El polarizado automotriz combina estilo, confort y protección."
+        description="No solo mejora la apariencia de tu auto, sino que también te protege a ti y a tus pasajeros frente al sol, el calor y los impactos."
+        ctaText="Descubre Nuestras Soluciones"
+      >
+        <ul className="space-y-3 mt-6 text-white/80">
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Seguridad:</strong> Actúa como una barrera protectora, evitando que el vidrio se desprenda.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Rechazo de calor:</strong> Reduce significativamente la temperatura interior del vehículo.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Privacidad y estética:</strong> Aporta un aspecto elegante y moderno.</li>
+          <li className="flex items-start gap-3"><CheckIcon /> <strong>Protección UV:</strong> Bloquea hasta el 99.9% de los rayos ultravioleta.</li>
+        </ul>
+      </FeatureSection>
+
+      <FeatureSection
+        direction="reverse"
+        label="Nuestro Compromiso"
+        title="Instalación Profesional Garantizada"
+        subtitle="Precisión y Estándares de Calidad Internacional"
+        image="https://images.unsplash.com/photo-1582218784260-ebcfce9c3a3b?w=800&auto=format&fit=crop&q=60"
+        imageAlt="Proceso de Instalación Profesional"
+        heading="Experiencia y Tecnología en Cada Detalle"
+        tagline="Cada instalación se realiza con precisión y estándares de calidad internacional."
+        description="Nuestro proceso es rápido, limpio y garantiza un acabado perfecto, sin bordes visibles ni burbujas. Nuestro equipo técnico utiliza herramientas de última generación y películas originales garantizadas para asegurar un resultado impecable."
+        ctaText="Agenda tu Instalación"
+      >
+        <h3 className="text-xl font-semibold mb-4 text-white/90 mt-6">Proceso de instalación:</h3>
+        <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
+          <li>Preparación y limpieza del vidrio.</li>
+          <li>Moldeado y ajuste de la película en el exterior del cristal.</li>
+          <li>Instalación interna con herramientas especializadas.</li>
+          <li>Sellado y revisión final de detalles.</li>
+        </ul>
+      </FeatureSection>
+
+      {/* --- Legal Tint Page Content Integrated --- */}
+      <section id="polarizados-legales" className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
         <div className="container mx-auto px-6">
-          <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-8 text-jbm-orange text-center">
+          <AnimateOnScroll className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-4 text-jbm-orange">
               🛡️ Polarizados Permitidos en México para Automóviles
             </h1>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.1}>
-            <p className="text-lg text-white/70 mb-10 max-w-3xl mx-auto text-center">
-              El polarizado de las ventanas se ha convertido en una de las modificaciones más comunes y funcionales para los vehículos en México. Además de mejorar la apariencia del auto, las películas polarizadas o de seguridad están diseñadas con materiales de poliéster de alta resistencia que reducen el calor, bloquean los rayos UV y brindan mayor privacidad a los pasajeros.
+            <p className="text-lg text-white/70 max-w-3xl mx-auto">
+              El polarizado de las ventanas se ha convertido en una de las modificaciones más comunes y funcionales para los vehículos en México.
             </p>
           </AnimateOnScroll>
 
-          <AnimateOnScroll delay={0.2} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🌞 Beneficios de los polarizados automotrices
-            </h2>
-            <p className="text-white/70 leading-relaxed mb-6">
-              El polarizado no solo es cuestión de estética. También aporta protección, confort y seguridad:
-            </p>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>Protección solar:</strong> bloquea hasta el 99% de los rayos UV, evitando daños en la piel y el interior del vehículo.</li>
-              <li><strong>Mayor seguridad:</strong> las películas de seguridad mantienen los fragmentos de vidrio adheridos ante un impacto.</li>
-              <li><strong>Confort térmico:</strong> reduce significativamente la temperatura interior del auto.</li>
-              <li><strong>Privacidad y estilo:</strong> mejora la apariencia del vehículo sin afectar la visibilidad.</li>
-            </ul>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.3} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              ⚖️ Regulaciones de polarizado en México
-            </h2>
-            <p className="text-white/70 leading-relaxed mb-6">
-              Antes de elegir el nivel de oscuridad de tu polarizado, es importante conocer las normas vigentes en México.
-              Según la NOM-001-SSP-2008, el uso de polarizados está permitido siempre y cuando no afecte la visibilidad del conductor ni impida la vista hacia el interior del vehículo durante inspecciones de seguridad.
-            </p>
-            <h3 className="text-2xl font-semibold mb-4 text-white/90">Recomendaciones generales:</h3>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>Parabrisas:</strong> solo se permite una franja superior de 10 cm o película transparente con filtro UV.</li>
-              <li><strong>Ventanas delanteras:</strong> deben permitir una transmisión de luz visible (VLT) mínima del 70%.</li>
-              <li><strong>Ventanas traseras y medallón:</strong> pueden tener mayor tonalidad, siempre que el vehículo cuente con espejos laterales.</li>
-            </ul>
-            <p className="text-white/70 leading-relaxed mt-6 italic bg-zinc-900 border border-white/10 p-6 rounded-xl">
-              💡 En JBM Tecnología Solar trabajamos con películas certificadas y dentro de la norma mexicana, asegurando visibilidad, protección y cumplimiento legal.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.4} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🚗 Tipos de polarizados recomendados
-            </h2>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>Nanocerámicos:</strong> bloquean rayos IR y UV, reducen el calor sin oscurecer en exceso.</li>
-              <li><strong>De seguridad:</strong> refuerzan el vidrio ante impactos o vandalismo.</li>
-              <li><strong>Decorativos o estéticos:</strong> disponibles en distintas tonalidades para un look más personalizado.</li>
-            </ul>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.5} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              📍 Polarizados legales y seguros en Reynosa
-            </h2>
-            <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
-              En JBM Tecnología Solar, te ayudamos a elegir el nivel de polarizado ideal para tu vehículo o flotilla, cumpliendo con las regulaciones mexicanas y utilizando materiales de calidad nanocerámica y de seguridad.
-              Protege tu inversión, mejora tu confort y evita multas innecesarias.
-            </p>
-            <p className="text-xl md:text-2xl font-bold text-white/90 mb-6">
-              📲 Cotiza tu polarizado autorizado hoy mismo.
-            </p>
-            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-jbm-orange text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 transform shadow-lg hover:shadow-jbm-orange/30">
-              👉 WhatsApp 899 255 7561
-            </a>
-            <p className="text-white/70 text-sm mt-4">📍 Reynosa, Tamaulipas</p>
-          </AnimateOnScroll>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <AnimateOnScroll>
+              <img
+                src="https://images.unsplash.com/photo-1621643194553-739c3e987c3a?w=800&auto=format&fit=crop&q=60"
+                alt="Medición de VLT en automóvil"
+                className="rounded-2xl shadow-2xl shadow-black/50 w-full h-auto object-cover aspect-[4/3]"
+                loading="lazy"
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.2}>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
+                Beneficios y Regulaciones Clave
+              </h2>
+              <p className="text-white/70 leading-relaxed mb-6">
+                Además de mejorar la apariencia del auto, las películas polarizadas o de seguridad están diseñadas con materiales de poliéster de alta resistencia que reducen el calor, bloquean los rayos UV y brindan mayor privacidad a los pasajeros.
+              </p>
+              <h3 className="text-2xl font-semibold mb-4 text-white/90">Regulaciones en México (NOM-001-SSP-2008):</h3>
+              <ul className="space-y-3 text-white/80">
+                <li className="flex items-start gap-3"><CheckIcon /> <strong>Parabrisas:</strong> Solo franja superior de 10 cm o película transparente con filtro UV.</li>
+                <li className="flex items-start gap-3"><CheckIcon /> <strong>Ventanas delanteras:</strong> Transmisión de luz visible (VLT) mínima del 70%.</li>
+                <li className="flex items-start gap-3"><CheckIcon /> <strong>Ventanas traseras y medallón:</strong> Mayor tonalidad permitida con espejos laterales.</li>
+              </ul>
+              <p className="text-white/70 leading-relaxed mt-6 italic bg-zinc-900 border border-white/10 p-6 rounded-xl">
+                💡 En JBM Tecnología Solar trabajamos con películas certificadas y dentro de la norma mexicana, asegurando visibilidad, protección y cumplimiento legal.
+              </p>
+              <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1">
+                Cotiza tu Polarizado Legal
+              </a>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
-      {/* --- Smart Tint Page Content --- */}
-      <section id="polarizado-inteligente" className="py-24 bg-gradient-to-b from-black to-gray-900 text-white">
+      {/* --- Quote Page Content Integrated --- */}
+      <section id="cotizacion-polarizado-nanoceramico" className="py-24 bg-black text-white">
         <div className="container mx-auto px-6">
-          <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-8 text-jbm-orange text-center">
-              🚘 Polarizado Inteligente Transparente
+          <AnimateOnScroll className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-4 text-jbm-orange">
+              💰 Precios y Características – Polarizado Nanocerámico
             </h1>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.1}>
-            <p className="text-lg text-white/70 mb-10 max-w-3xl mx-auto text-center">
-              La nueva generación en protección solar automotriz.
-              Ideal para quienes buscan máxima protección sin perder visibilidad ni estilo.
-              Este polarizado inteligente combina tecnología avanzada y estética moderna para ofrecerte claridad total con beneficios reales.
+            <p className="text-lg text-white/70 max-w-3xl mx-auto">
+              Materiales de alta calidad con garantía y rendimiento comprobado para tu vehículo.
             </p>
           </AnimateOnScroll>
 
-          <AnimateOnScroll delay={0.2} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              ✅ Beneficios del Polarizado Inteligente Transparente
-            </h2>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>Transparente y elegante:</strong> prácticamente invisible, mantiene la claridad del vidrio original sin alterar el diseño de tu vehículo.</li>
-              <li><strong>Protección UV y contra el calor:</strong> bloquea rayos ultravioleta y reduce la temperatura interior, manteniendo tu auto fresco y cómodo.</li>
-              <li><strong>Seguridad y visibilidad total:</strong> conducción segura de día y de noche, sin reflejos ni distorsión.</li>
-              <li><strong>Instalación rápida y limpia:</strong> aplicamos procedimientos profesionales que no dañan el vidrio ni requieren mantenimiento adicional.</li>
-              <li><strong>Durabilidad garantizada:</strong> materiales de alta resistencia con protección a largo plazo contra el desgaste, rayas y burbujas.</li>
-            </ul>
-          </AnimateOnScroll>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <AnimateOnScroll>
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full flex flex-col">
+                <h2 className="text-3xl font-bold tracking-tight mb-6 text-jbm-orange">
+                  🔰 Características del Material
+                </h2>
+                <p className="text-white/70 leading-relaxed mb-6">
+                  Nuestras películas nanocerámicas están diseñadas con tecnología de punta para ofrecer la mejor experiencia:
+                </p>
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold mb-4 text-white/90">🧾 Garantía escrita:</h3>
+                  <ul className="space-y-3 text-white/80">
+                    <li className="flex items-start gap-3"><CheckIcon /> <strong>3 años</strong> contra desprendimiento o burbujas.</li>
+                    <li className="flex items-start gap-3"><CheckIcon /> <strong>5 años</strong> contra decoloración.</li>
+                    <li className="flex items-start gap-3"><CheckIcon /> Vida útil aproximada: <strong>7 años o más.</strong></li>
+                  </ul>
+                </div>
 
-          <AnimateOnScroll delay={0.3} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🌞 Ideal para:
-            </h2>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li>Conductores que buscan protección sin oscurecer su vehículo.</li>
-              <li>Vehículos ejecutivos, flotillas empresariales o autos de exhibición.</li>
-              <li>Conductores que viajan constantemente bajo el sol de Tamaulipas.</li>
-            </ul>
-          </AnimateOnScroll>
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold mb-4 text-white/90">🌗 Tonos disponibles:</h3>
+                  <ul className="space-y-3 text-white/80">
+                    <li className="flex items-center gap-3"><span className="w-5 h-5 bg-gray-900 rounded-full border border-white/20"></span> <strong>05% Oscuro</strong></li>
+                    <li className="flex items-center gap-3"><span className="w-5 h-5 bg-gray-700 rounded-full border border-white/20"></span> <strong>20% Medio</strong></li>
+                    <li className="flex items-center gap-3"><span className="w-5 h-5 bg-gray-500 rounded-full border border-white/20"></span> <strong>35% Claro</strong></li>
+                    <li className="flex items-center gap-3"><span className="w-5 h-5 bg-gray-300 rounded-full border border-white/20"></span> <strong>50% Claro Premium</strong></li>
+                  </ul>
+                </div>
+                <p className="text-white/70 leading-relaxed mt-auto italic bg-black border border-white/10 p-4 rounded-xl">
+                  📌 Puedes combinar los tonos según tus preferencias.
+                </p>
+              </div>
+            </AnimateOnScroll>
 
-          <AnimateOnScroll delay={0.4} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🧡 Comprueba la diferencia
-            </h2>
-            <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
-              Solicita tu prueba gratuita del Polarizado Inteligente Transparente y siente la diferencia desde el primer minuto.
-              Tu auto lucirá igual, pero se sentirá mucho mejor.
-            </p>
-            <p className="text-xl md:text-2xl font-bold text-white/90 mb-6">
-              📲 Agenda por WhatsApp:
-            </p>
-            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-jbm-orange text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 transform shadow-lg hover:shadow-jbm-orange/30">
-              899 255 7561
-            </a>
-            <p className="text-white/70 text-sm mt-4">🚗 JBM Tecnología Solar – Reynosa, Tamaulipas</p>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* --- Why Tint Page Content --- */}
-      <section id="por-que-polarizar" className="py-24 bg-black text-white">
-        <div className="container mx-auto px-6">
-          <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-8 text-jbm-orange text-center">
-              🌞 ¿Por qué polarizar tu vehículo?
-            </h1>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.1}>
-            <p className="text-lg text-white/70 mb-10 max-w-3xl mx-auto text-center">
-              El polarizado automotriz combina estilo, confort y protección.
-              No solo mejora la apariencia de tu auto, sino que también te protege a ti y a tus pasajeros frente al sol, el calor y los impactos.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.2} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              Beneficios clave:
-            </h2>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>🔒 Seguridad:</strong> las películas de seguridad actúan como una barrera protectora, evitando que el vidrio se desprenda en caso de accidente o intento de robo.</li>
-              <li><strong>🌡️ Rechazo de calor:</strong> reduce significativamente la temperatura interior del vehículo, haciendo cada viaje más cómodo.</li>
-              <li><strong>🕶️ Privacidad y estética:</strong> aporta un aspecto elegante y moderno, al tiempo que brinda discreción.</li>
-              <li><strong>☀️ Protección UV:</strong> bloquea hasta el 99.9% de los rayos ultravioleta, cuidando tu piel y evitando el deterioro del interior de tu auto.</li>
-            </ul>
-            <p className="text-white/70 leading-relaxed mt-6 italic bg-zinc-900 border border-white/10 p-6 rounded-xl">
-              En JBM Tecnología Solar, trabajamos con películas nanocerámicas y de seguridad certificadas, diseñadas para resistir el clima extremo de Reynosa y ofrecerte máxima durabilidad.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.3} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🔧 Instalación Profesional
-            </h2>
-            <p className="text-white/70 leading-relaxed mb-6">
-              Cada instalación de polarizado se realiza con precisión y estándares de calidad internacional.
-              Nuestro proceso es rápido, limpio y garantiza un acabado perfecto, sin bordes visibles ni burbujas.
-            </p>
-            <h3 className="text-2xl font-semibold mb-4 text-white/90">Proceso de instalación:</h3>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li>Preparación y limpieza del vidrio.</li>
-              <li>Moldeado y ajuste de la película en el exterior del cristal.</li>
-              <li>Instalación interna con herramientas especializadas.</li>
-              <li>Sellado y revisión final de detalles.</li>
-            </ul>
-            <p className="text-white/70 leading-relaxed mt-6">
-              La instalación suele completarse en unas pocas horas, dependiendo del tipo de vehículo y del material seleccionado.
-              Nuestro equipo técnico utiliza herramientas de última generación y películas originales garantizadas para asegurar un resultado impecable.
-            </p>
-            <p className="text-white/70 leading-relaxed mt-6 italic bg-zinc-900 border border-white/10 p-6 rounded-xl">
-              🛠️ Calidad, precisión y garantía — eso es lo que diferencia a JBM Tecnología Solar.
-            </p>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* --- Quote Page Content --- */}
-      <section id="cotizacion-polarizado-nanoceramico" className="py-24 bg-gradient-to-b from-black to-gray-900 text-white">
-        <div className="container mx-auto px-6">
-          <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-8 text-jbm-orange text-center">
-              🌞 Cotización – Polarizado Nanocerámico
-            </h1>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.1}>
-            <p className="text-lg text-white/70 mb-10 max-w-3xl mx-auto text-center">
-              En JBM Tecnología Solar te ofrecemos materiales de alta calidad con garantía y rendimiento comprobado.
-              El polarizado nanocerámico es la mejor opción para quienes buscan larga duración, alto rechazo de calor y máxima claridad visual.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.2} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              🔰 Características del Material
-            </h2>
-            <p className="text-white/70 leading-relaxed mb-6">
-              Nuestras películas nanocerámicas están diseñadas con tecnología de punta para ofrecer la mejor experiencia:
-            </p>
-            <h3 className="text-2xl font-semibold mb-4 text-white/90">🧾 Garantía escrita:</h3>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4 mb-8">
-              <li><strong>3 años</strong> contra desprendimiento o burbujas.</li>
-              <li><strong>5 años</strong> contra decoloración.</li>
-              <li>Vida útil aproximada: <strong>7 años o más.</strong></li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold mb-4 text-white/90">🌗 Tonos disponibles:</h3>
-            <ul className="list-disc list-inside space-y-3 text-white/80 ml-4">
-              <li><strong>05% Oscuro</strong></li>
-              <li><strong>20% Medio</strong></li>
-              <li><strong>35% Claro</strong></li>
-              <li><strong>50% Claro Premium</strong></li>
-            </ul>
-            <p className="text-white/70 leading-relaxed mt-6 italic bg-zinc-900 border border-white/10 p-6 rounded-xl">
-              📌 Puedes combinar los tonos según tus preferencias.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={0.3} className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-jbm-orange">
-              💰 Precios
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="min-w-full bg-zinc-900 rounded-xl overflow-hidden shadow-lg border border-white/10">
-                <thead>
-                  <tr className="bg-jbm-orange/20 text-jbm-orange uppercase text-sm leading-normal">
-                    <th className="py-4 px-6 text-left font-semibold">Servicio</th>
-                    <th className="py-4 px-6 text-left font-semibold">Descripción</th>
-                    <th className="py-4 px-6 text-left font-semibold">Precio</th>
-                  </tr>
-                </thead>
-                <tbody className="text-white/80 text-sm font-light">
-                  {prices.map((item, index) => (
-                    <tr key={index} className="border-b border-white/10 hover:bg-zinc-800 transition-colors duration-200">
-                      <td className="py-4 px-6 whitespace-nowrap">{item.service}</td>
-                      <td className="py-4 px-6">{item.description}</td>
-                      <td className="py-4 px-6 font-bold text-jbm-yellow">{item.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </AnimateOnScroll>
+            <AnimateOnScroll delay={0.2}>
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full flex flex-col">
+                <h2 className="text-3xl font-bold tracking-tight mb-6 text-jbm-orange">
+                  💰 Precios de Servicio
+                </h2>
+                <div className="overflow-x-auto flex-grow">
+                  <table className="min-w-full rounded-xl overflow-hidden text-left">
+                    <thead className="bg-jbm-orange/20 text-jbm-orange uppercase text-sm leading-normal">
+                      <tr>
+                        <th className="py-4 px-4 font-semibold">Servicio</th>
+                        <th className="py-4 px-4 font-semibold">Descripción</th>
+                        <th className="py-4 px-4 font-semibold text-right">Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-white/80 text-sm font-light">
+                      {prices.map((item, index) => (
+                        <tr key={index} className="border-b border-white/10 hover:bg-zinc-800 transition-colors duration-200">
+                          <td className="py-4 px-4 whitespace-nowrap">{item.service}</td>
+                          <td className="py-4 px-4">{item.description}</td>
+                          <td className="py-4 px-4 font-bold text-jbm-yellow text-right">{item.price}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-white/70 leading-relaxed mt-8 text-center">
+                  ¿Listo para proteger tu vehículo con lo mejor?
+                </p>
+                <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block self-center mt-6 bg-jbm-orange text-white font-bold py-3 px-8 rounded-xl text-lg transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 transform shadow-lg hover:shadow-jbm-orange/30">
+                  Cotizar por WhatsApp
+                </a>
+              </div>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 

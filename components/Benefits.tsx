@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Benefit } from '../types';
 import AnimateOnScroll from './AnimateOnScroll';

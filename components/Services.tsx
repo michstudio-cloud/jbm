@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Service } from '../types';
 import AnimateOnScroll from './AnimateOnScroll';
