@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           <img src="https://aovdenhnjal4d1pi.public.blob.vercel-storage.com/jbm%20logo.svg" alt="JBM Tecnología Solar Logo" className="h-8" loading="lazy" />
         </a>
         <div className="flex items-center space-x-8"> {/* Adjusted for single button, hidden md:flex removed as no other nav*/}
-          <a href="#contacto" className="bg-jbm-orange hover:bg-jbm-red-orange text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+          <a href="#cta-final" className="bg-jbm-orange hover:bg-jbm-red-orange text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105">
             Cotizar
           </a>
         </div>

@@ -15,21 +15,21 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Servicios</h4>
+            <h4 className="font-semibold mb-4">Secciones</h4>
             <ul className="space-y-3">
-              <li><a href="#servicios" className="text-white/50 hover:text-jbm-orange transition-colors">Polarizados</a></li>
-              <li><a href="#productos" className="text-white/50 hover:text-jbm-orange transition-colors">Películas Premium</a></li>
-              <li><a href="#empresa" className="text-white/50 hover:text-jbm-orange transition-colors">Edificios</a></li>
-              <li><a href="#galeria" className="text-white/50 hover:text-jbm-orange transition-colors">Portfolio</a></li>
+              <li><a href="#hablando-claro" className="text-white/50 hover:text-jbm-orange transition-colors">Beneficios</a></li>
+              <li><a href="#el-producto" className="text-white/50 hover:text-jbm-orange transition-colors">Nuestro Producto</a></li>
+              <li><a href="#tonos" className="text-white/50 hover:text-jbm-orange transition-colors">Tonos</a></li>
+              <li><a href="#legalidad-respaldo" className="text-white/50 hover:text-jbm-orange transition-colors">Legalidad y Respaldo</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Empresa</h4>
+            <h4 className="font-semibold mb-4">Cotización</h4>
             <ul className="space-y-3">
-              <li><a href="#empresa" className="text-white/50 hover:text-jbm-orange transition-colors">Nosotros</a></li>
-              <li><a href="#galeria" className="text-white/50 hover:text-jbm-orange transition-colors">Trabajos</a></li>
-              <li><a href="#contacto" className="text-white/50 hover:text-jbm-orange transition-colors">Contacto</a></li>
-              <li><a href="#cotizacion-polarizado-nanoceramico" className="text-white/50 hover:text-jbm-orange transition-colors">Cotizaciones</a></li>
+              <li><a href="#precios" className="text-white/50 hover:text-jbm-orange transition-colors">Ver Precios</a></li>
+              <li><a href="#como-trabajamos" className="text-white/50 hover:text-jbm-orange transition-colors">Cómo Trabajamos</a></li>
+              <li><a href="#confianza-local" className="text-white/50 hover:text-jbm-orange transition-colors">Nuestra Ubicación</a></li>
+              <li><a href="#cta-final" className="text-white/50 hover:text-jbm-orange transition-colors">Agendar Cita</a></li>
             </ul>
           </div>
           <div>
