@@ -287,6 +287,60 @@ const MainContent: React.FC = () => {
         </div>
       </section>
 
+      {/* NEW SECTION: Soluciones para Negocios */}
+      <section id="soluciones-para-negocios" className="py-24 bg-black text-white">
+        <div className="container mx-auto px-6">
+          <AnimateOnScroll className="text-center mb-16">
+            <p className="text-sm font-semibold text-jbm-orange uppercase tracking-widest mb-4">Para tu Empresa</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">También polarizamos tu Negocio</h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">¿Tienes un negocio, oficina o local comercial? También realizamos trabajos de polarizado para comercios y empresas en Reynosa.</p>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <AnimateOnScroll>
+              <img
+                src="https://images.unsplash.com/photo-1544377193-339235e07a3d?w=800&auto=format&fit=crop&q=60"
+                alt="Oficina moderna con ventanas polarizadas"
+                className="rounded-2xl shadow-2xl shadow-black/50 w-full h-auto object-cover aspect-[4/3]"
+                loading="lazy"
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={0.2}>
+              <h3 className="text-3xl font-bold tracking-tight mb-6 text-jbm-orange">
+                Beneficios Clave para tu Espacio Comercial
+              </h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                Instalamos películas de control solar que ayudan a transformar cualquier ambiente:
+              </p>
+              <ul className="list-none space-y-4 text-lg text-white/90 mb-8">
+                <li className="flex items-start gap-3"><CheckIcon /> Reducir el calor dentro del local</li>
+                <li className="flex items-start gap-3"><CheckIcon /> Disminuir el deslumbramiento</li>
+                <li className="flex items-start gap-3"><CheckIcon /> Mejorar el confort de clientes y empleados</li>
+                <li className="flex items-start gap-3"><CheckIcon /> Proteger mobiliario y equipo</li>
+                <li className="flex items-start gap-3"><CheckIcon /> Reducir el uso del aire acondicionado</li>
+              </ul>
+              <p className="text-jbm-yellow text-xl font-bold mb-6">Soluciones pensadas para el clima extremo de la región.</p>
+              
+              <h3 className="text-2xl font-semibold mb-4 text-white/90">Atendemos proyectos para:</h3>
+              <div className="grid grid-cols-2 gap-x-6 gap-y-3 text-white/80 text-lg mb-8">
+                <p className="flex items-center gap-2">🏢 Oficinas</p>
+                <p className="flex items-center gap-2">🏬 Locales comerciales</p>
+                <p className="flex items-center gap-2">🏫 Escuelas</p>
+                <p className="flex items-center gap-2">🏭 Naves industriales</p>
+                <p className="flex items-center gap-2">💼 Franquicias</p>
+              </div>
+
+              <p className="text-white/70 leading-relaxed mb-6">
+                Trabajamos con materiales de alta durabilidad, instalación profesional y asesoría personalizada según el tipo de vidrio y la exposición solar. Cada proyecto se evalúa de forma individual para ofrecer la mejor solución según el uso del espacio y el presupuesto.
+              </p>
+              <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1">
+                Cotizar Proyecto Comercial
+              </a>
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </section>
+
       {/* 7. SECCIÓN 7 — CÓMO TRABAJAMOS */}
       <section id="como-trabajamos" className="py-24 bg-black text-white text-center">
         <div className="container mx-auto px-6 max-w-3xl">

@@ -1,13 +1,18 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 
+// Define the props interface for AnimateOnScroll
 interface AnimateOnScrollProps {
   children: React.ReactNode;
-  delay?: number;
-  className?: string;
+  className?: string; // Make className optional
+  delay?: number; // Make delay optional
 }
 
-const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({ children, delay = 0, className = '' }) => {
+const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
+  children,
+  className = '', // Default to empty string if not provided
+  delay = 0,      // Default to 0 if not provided
+}) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 

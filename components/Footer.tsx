@@ -27,6 +27,7 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold mb-4">Cotización</h4>
             <ul className="space-y-3">
               <li><a href="#precios" className="text-white/50 hover:text-jbm-orange transition-colors">Ver Precios</a></li>
+              <li><a href="#soluciones-para-negocios" className="text-white/50 hover:text-jbm-orange transition-colors">Proyectos Comerciales</a></li> {/* New link */}
               <li><a href="#como-trabajamos" className="text-white/50 hover:text-jbm-orange transition-colors">Cómo Trabajamos</a></li>
               <li><a href="#confianza-local" className="text-white/50 hover:text-jbm-orange transition-colors">Nuestra Ubicación</a></li>
               <li><a href="#cta-final" className="text-white/50 hover:text-jbm-orange transition-colors">Agendar Cita</a></li>
