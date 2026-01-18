@@ -14,6 +14,27 @@
       body {
         font-family: 'Inter', sans-serif;
       }
+      /* Custom utility for subtle grid pattern background */
+      .bg-grid-small-white\/\[0\.2\] {
+        background-size: 10px 10px;
+        background-image: linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+      }
+      /* Custom utility for text shadow */
+      .text-shadow-red {
+        text-shadow: 0 0 8px rgba(246, 50, 42, 0.7); /* F6322A with 70% opacity */
+      }
+      /* Keyframe animation for radial gradient */
+      @keyframes gradient-move {
+        0% { background-position: 0% 0%; }
+        50% { background-position: 100% 100%; }
+        100% { background-position: 0% 0%; }
+      }
+      /* Apply animation to a class */
+      .animate-gradient-move {
+        background-size: 400% 400%;
+        animation: gradient-move 15s ease infinite;
+      }
     </style>
   <script type="importmap">
 {

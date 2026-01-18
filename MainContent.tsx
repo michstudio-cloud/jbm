@@ -51,16 +51,20 @@ const MainContent: React.FC = () => {
     <div className="bg-black">
 
       {/* 1. HERO (DIRECTO AL PROBLEMA) */}
-      <section id="hero" className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-black to-gray-900">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,_rgba(59,130,246,0.1)_0%,_transparent_40%)]"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_90%,_rgba(96,165,250,0.1)_0%,_transparent_40%)]"></div>
+      <section id="hero" className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-black bg-grid-small-white/[0.2] animate-gradient-move"
+        style={{
+          background: 'radial-gradient(ellipse at bottom, #1D1D1D 0%, #000000 60%)',
+          backgroundSize: '400% 400%' // Ensure background-size is set for animation
+        }}>
+        <div className="absolute inset-0 z-0 opacity-40">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,_rgba(242,109,43,0.1)_0%,_transparent_40%)]"></div>
+          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_90%,_rgba(238,195,45,0.1)_0%,_transparent_40%)]"></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-6 max-w-4xl">
           <AnimateOnScroll>
             <p className="text-xl md:text-2xl text-white/70 mb-4 font-semibold">¿Tu carro se convierte en horno cada vez que sales?</p>
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight mb-6 bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
               Instala polarizado profesional y legal en Reynosa
               y maneja más fresco, más cómodo y sin preocupaciones.
             </h1>
@@ -83,7 +87,7 @@ const MainContent: React.FC = () => {
 
       {/* 2. SECCIÓN 2 — HABLANDO CLARO (TONO MASCULINO) */}
       <section id="hablando-claro" className="relative py-24 bg-gradient-to-b from-black to-gray-900 text-center overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
+        <div className="absolute inset-0 z-0 opacity-15"> {/* Aumentar opacidad para más presencia */}
             <img src="https://images.unsplash.com/photo-1596708064115-ff55416047eb?w=1600&auto=format&fit=crop&q=80" alt="Carro manejando bajo el sol de Reynosa" className="w-full h-full object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-black/70"></div> {/* Overlay para legibilidad */}
         </div>
@@ -91,7 +95,7 @@ const MainContent: React.FC = () => {
           <AnimateOnScroll>
             <p className="text-sm font-semibold text-jbm-orange uppercase tracking-widest mb-4">La Verdad es...</p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6">El problema no es tu carro…</h2>
-            <p className="text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 text-jbm-red-orange animate-pulse">es el calor de Reynosa.</p>
+            <p className="text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 text-jbm-red-orange text-shadow-red animate-pulse">es el calor de Reynosa.</p>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.2}>
             <p className="text-xl text-white/70 mb-8">Un polarizado común solo oscurece el vidrio. Nuestro polarizado nanocerámico trabaja donde importa:</p>
@@ -121,35 +125,35 @@ const MainContent: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimateOnScroll delay={0.1}>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <span className="text-jbm-orange text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🌡️</span>
                 <h3 className="text-2xl font-semibold mb-3">Rechazo de calor hasta 92%</h3>
                 <p className="text-white/60">Mantén tu vehículo fresco incluso en los días más calurosos.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2}>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <span className="text-jbm-yellow text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">📶</span>
                 <h3 className="text-2xl font-semibold mb-3">No interfiere con señal</h3>
                 <p className="text-white/60">Totalmente compatible con GPS, celular y radio.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.3}>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <span className="text-jbm-orange text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">👀</span>
                 <h3 className="text-2xl font-semibold mb-3">Buena visibilidad al manejar</h3>
                 <p className="text-white/60">Claridad excepcional de día y de noche, sin distorsiones.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.4}>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <span className="text-jbm-yellow text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">🛋️</span>
                 <h3 className="text-2xl font-semibold mb-3">Protege el interior del auto</h3>
                 <p className="text-white/60">Evita la decoloración y el agrietamiento de asientos y tablero.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.5}>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/5 flex flex-col items-center text-center group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <span className="text-jbm-orange text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">💪</span>
                 <h3 className="text-2xl font-semibold mb-3">Material duradero</h3>
                 <p className="text-white/60">Resistente a la decoloración y al desgaste por años.</p>
@@ -175,7 +179,7 @@ const MainContent: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <AnimateOnScroll delay={0.1}>
-              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10">
+              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10 hover:-translate-y-2">
                 <img src="https://images.unsplash.com/photo-1542362543-c75c88c7a652?w=800&auto=format&fit=crop&q=60" alt="Auto con polarizado 05%" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                 <div className="p-6">
                   <div className="flex items-center justify-center w-24 h-24 mx-auto bg-gray-900 rounded-full text-3xl font-bold text-white/80 border-4 border-jbm-orange mb-6 -mt-16 relative z-10">05%</div>
@@ -185,7 +189,7 @@ const MainContent: React.FC = () => {
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2}>
-              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10">
+              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10 hover:-translate-y-2">
                 <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&auto=format&fit=crop&q=60" alt="Auto con polarizado 20%" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                 <div className="p-6">
                   <div className="flex items-center justify-center w-24 h-24 mx-auto bg-gray-700 rounded-full text-3xl font-bold text-white/80 border-4 border-jbm-orange mb-6 -mt-16 relative z-10">20%</div>
@@ -195,7 +199,7 @@ const MainContent: React.FC = () => {
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.3}>
-              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10">
+              <div className="bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 flex flex-col group transition-all duration-300 hover:border-jbm-orange/50 hover:shadow-xl hover:shadow-jbm-orange/10 hover:-translate-y-2">
                 <img src="https://images.unsplash.com/photo-1565042835848-12c5b3695270?w=800&auto=format&fit=crop&q=60" alt="Auto con polarizado 35%" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                 <div className="p-6">
                   <div className="flex items-center justify-center w-24 h-24 mx-auto bg-gray-500 rounded-full text-3xl font-bold text-white/80 border-4 border-jbm-orange mb-6 -mt-16 relative z-10">35%</div>
@@ -209,7 +213,7 @@ const MainContent: React.FC = () => {
             👉 Puedes combinar tonos según tu gusto y lo permitido. Si tienes duda, nosotros te recomendamos el mejor.
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.5} className="text-center mt-12">
-            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1">
+            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/30">
               Asesoría Personalizada
             </a>
           </AnimateOnScroll>
@@ -239,21 +243,21 @@ const MainContent: React.FC = () => {
                 Cumplimiento y Calidad en Cada Instalación
               </h3>
               <ul className="list-none space-y-6 text-xl text-white/90 mb-8">
-                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300">
+                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/10">
                   <span className="text-jbm-orange text-3xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">📜</span>
                   <div>
                     <h3 className="font-semibold text-2xl mb-1">Instalamos conforme a normativa</h3>
                     <p className="text-white/70 text-lg">Nos aseguramos de que tu polarizado cumpla con todas las regulaciones vigentes.</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300">
+                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/10">
                   <span className="text-jbm-yellow text-3xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">✨</span>
                   <div>
                     <h3 className="font-semibold text-2xl mb-1">Trabajo limpio y profesional</h3>
                     <p className="text-white/70 text-lg">Acabados impecables sin burbujas ni imperfecciones.</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300">
+                <li className="flex items-start gap-4 p-4 bg-zinc-900 rounded-xl border border-white/10 group hover:border-jbm-orange/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/10">
                   <span className="text-jbm-orange text-3xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">✅</span>
                   <div>
                     <h3 className="font-semibold text-2xl mb-1">Garantía por escrito</h3>
@@ -266,7 +270,7 @@ const MainContent: React.FC = () => {
                 <ul className="list-none space-y-4 text-xl text-white/90">
                   <li className="flex items-center gap-3"><CheckIcon /> <strong>3 años</strong> en desprendimiento o globos</li>
                   <li className="flex items-center gap-3"><CheckIcon /> <strong>5 años</strong> en decoloración</li>
-                  <li className="flex items-center gap-3"><CheckIcon /> Material con vida útil mínima de <strong>7 años</strong></li>
+                  <li className="flex items-center gap-3"><CheckIcon /> <strong>7 años</strong> de vida útil mínima en el material</li>
                 </ul>
                 <p className="text-white/70 text-lg mt-8 italic">Si algo falla, respondemos.</p>
               </div>
@@ -286,7 +290,7 @@ const MainContent: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <AnimateOnScroll>
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full flex flex-col justify-between transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full flex flex-col justify-between transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="text-jbm-orange text-4xl">🚗</span> Auto
@@ -310,7 +314,7 @@ const MainContent: React.FC = () => {
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={0.2}>
-              <div className="bg-gradient-to-br from-jbm-orange to-jbm-red-orange rounded-2xl p-8 border border-jbm-orange/50 shadow-lg shadow-jbm-orange/20 h-full flex flex-col justify-between transform scale-105 relative z-10">
+              <div className="bg-gradient-to-br from-jbm-orange to-jbm-red-orange rounded-2xl p-8 border border-jbm-orange/50 shadow-lg shadow-jbm-orange/20 h-full flex flex-col justify-between transform scale-105 relative z-10 transition-all duration-300 hover:shadow-xl hover:shadow-jbm-orange/40">
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="text-white text-4xl">🚨</span> PAQUETE COMPLETO
@@ -390,7 +394,7 @@ const MainContent: React.FC = () => {
               <p className="text-white/70 leading-relaxed mb-6">
                 Trabajamos con materiales de alta durabilidad, instalación profesional y asesoría personalizada según el tipo de vidrio y la exposición solar. Cada proyecto se evalúa de forma individual para ofrecer la mejor solución según el uso del espacio y el presupuesto.
               </p>
-              <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1">
+              <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-jbm-orange text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/30">
                 Cotizar Proyecto Comercial
               </a>
             </AnimateOnScroll>
@@ -408,28 +412,28 @@ const MainContent: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <AnimateOnScroll delay={0.1}>
-              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <div className="w-16 h-16 bg-gradient-to-br from-jbm-orange to-jbm-yellow rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4 transform group-hover:scale-110 transition-transform duration-300">1️⃣</div>
                 <h3 className="text-xl font-semibold mb-2">Agenda tu cita</h3>
                 <p className="text-white/60 text-center">Contáctanos fácilmente por WhatsApp para coordinar.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2}>
-              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <div className="w-16 h-16 bg-gradient-to-br from-jbm-orange to-jbm-yellow rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4 transform group-hover:scale-110 transition-transform duration-300">2️⃣</div>
                 <h3 className="text-xl font-semibold mb-2">Llegas con tu carro</h3>
                 <p className="text-white/60 text-center">Te esperamos a la hora acordada en nuestro taller.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.3}>
-              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <div className="w-16 h-16 bg-gradient-to-br from-jbm-orange to-jbm-yellow rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4 transform group-hover:scale-110 transition-transform duration-300">3️⃣</div>
                 <h3 className="text-xl font-semibold mb-2">Instalamos el polarizado</h3>
                 <p className="text-white/60 text-center">Nuestro equipo profesional realiza la instalación en poco tiempo.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.4}>
-              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-1">
+              <div className="flex flex-col items-center bg-zinc-900 rounded-2xl p-6 border border-white/10 h-full group transition-all duration-300 hover:border-jbm-orange/30 hover:-translate-y-2 hover:shadow-xl hover:shadow-jbm-orange/10">
                 <div className="w-16 h-16 bg-gradient-to-br from-jbm-orange to-jbm-yellow rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4 transform group-hover:scale-110 transition-transform duration-300">4️⃣</div>
                 <h3 className="text-xl font-semibold mb-2">Te vas manejando más fresco</h3>
                 <p className="text-white/60 text-center">¡Disfruta del confort y la protección desde el primer momento!</p>
@@ -453,7 +457,7 @@ const MainContent: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <AnimateOnScroll className="lg:col-span-1">
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full transition-all duration-300 hover:border-jbm-orange/30 hover:shadow-lg hover:shadow-jbm-orange/10">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full transition-all duration-300 hover:border-jbm-orange/30 hover:shadow-lg hover:shadow-jbm-orange/10 hover:-translate-y-2">
                 <h3 className="text-2xl font-bold mb-4 text-jbm-orange">Horarios y Ubicación</h3>
                 <p className="text-white/70 text-lg mb-4 flex items-center gap-3">
                   <ClockIcon /> Lunes a sábado
@@ -462,13 +466,13 @@ const MainContent: React.FC = () => {
                 <p className="text-white/70 text-lg flex items-start gap-3">
                   <MapPinIcon /> Fracc. San Pedro, Reynosa, Tamaulipas
                 </p>
-                <a href="https://maps.app.goo.gl/BAnYRRBaPuoLfHyj8" target="_blank" rel="noopener noreferrer" className="inline-block mt-6 bg-jbm-orange text-white font-semibold py-2 px-6 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1">
+                <a href="https://maps.app.goo.gl/BAnYRRBaPuoLfHyj8" target="_blank" rel="noopener noreferrer" className="inline-block mt-6 bg-jbm-orange text-white font-semibold py-2 px-6 rounded-xl transition-all duration-300 hover:bg-jbm-red-orange hover:-translate-y-1 hover:shadow-lg hover:shadow-jbm-orange/30">
                     Ver en Google Maps
                 </a>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.2} className="lg:col-span-2">
-              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full transition-all duration-300 hover:border-jbm-orange/30 hover:shadow-lg hover:shadow-jbm-orange/10">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-white/10 h-full transition-all duration-300 hover:border-jbm-orange/30 hover:shadow-lg hover:shadow-jbm-orange/10 hover:-translate-y-2">
                 <h3 className="text-2xl font-bold mb-4 text-jbm-orange">Lo Que Dicen Nuestros Clientes</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   {testimonialsData.slice(0, 2).map((testimonial, index) => ( // Show first 2 testimonials
@@ -505,7 +509,7 @@ const MainContent: React.FC = () => {
         <div className="container mx-auto px-6 max-w-3xl">
           <AnimateOnScroll>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-8">¿Listo para dejar de sufrir el calor?</h2>
-            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-jbm-orange font-bold py-4 px-12 rounded-xl text-xl transition-all duration-300 hover:bg-gray-200 hover:-translate-y-1 transform shadow-lg shadow-jbm-red-orange/40">
+            <a href="https://wa.me/528992557561" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-jbm-orange font-bold py-4 px-12 rounded-xl text-xl transition-all duration-300 hover:bg-gray-200 hover:-translate-y-2 transform shadow-lg shadow-jbm-red-orange/40 hover:shadow-jbm-orange/60">
               👉 AGENDAR CITA POR WHATSAPP
             </a>
           </AnimateOnScroll>
